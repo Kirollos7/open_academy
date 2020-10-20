@@ -2,3 +2,12 @@
 
 from . import controllers
 from . import models
+
+'''
+CRUD
+Create 
+Read 
+Update
+Delete
+
+'''

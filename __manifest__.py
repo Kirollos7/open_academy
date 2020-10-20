@@ -6,11 +6,15 @@
         Open Academy is a Application E-Learning""",
 
     'description': """
-        E-Learning is the futuer
+        E-Learning is the future Learning Around the world, It will help student
+        Open Academy module for managing trainings:
+            - training courses
+            - training sessions
+            - attendees registration.
     """,
 
     'author': "Kirollos Noshy",
-    'website': "http://www.yourcompany.com",
+    'website': "http://www.google.com/e-learmning",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/12.0/odoo/addons/base/data/ir_module_category_data.xml
@@ -20,12 +24,15 @@
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
+    'application': True,
+    'installable': True,
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
+        'views/openacademy.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
